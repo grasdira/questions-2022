@@ -24,7 +24,7 @@ function transformData(){
 
 		const user = {id: item.userId, name: userData[item.userId]}
 
-		let orders = item.orderIds.map(oId => {
+		const orders = item.orderIds.map(oId => {
 			return Object.assign({id: oId}, orderData[oId])
 		})
 
